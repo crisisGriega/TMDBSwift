@@ -17,6 +17,15 @@ class DataProvider {
     
     private let apiConnector: TMDBAPIConnector = TMDBAPIConnector();
     
+    @discardableResult func retrieveData(for page: Int = 1, query: String? = nil, completion: @escaping (Result<[Movie]>) -> Void) -> DataRequest {
+        if let _query = query {
+            return self.search(_query, page: page, completion: completion);
+        }
+        else {
+            return self.discover(page: page, completion: completion);
+        }
+    }
+    
     @discardableResult func discover(page: Int = 1, completion: @escaping (Result<[Movie]>) -> Void) -> DataRequest {
         let args: [String: String] = ["sort_by": "popularity.desc"];
         

@@ -42,4 +42,31 @@ class Movie: Mappable {
             return String(describing: _value);
         }));
     }
+    
+    
+    // MARK: Image
+    var smallImageURL: String? {
+        return self.imageURL(for: .small);
+    }
+    
+    var mediumImageURL: String? {
+        return self.imageURL(for: .medium);
+    }
+    
+    var largeImageURL: String? {
+        return self.imageURL(for: .large);
+    }
+    
+    var fullSizeImageURL: String? {
+        return self.imageURL(for: .fullSize);
+    }
+}
+
+
+// MARK: Private
+private extension Movie {
+    func imageURL(for size: ImageSize) -> String? {
+        guard let path = posterPath else { return nil; }
+        return TMDBAPIConnector.default.urlForImagewithPath(path, size: size);
+    }
 }

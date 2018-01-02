@@ -19,6 +19,19 @@
 		56553AA51FFBE2C000380F31 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AA41FFBE2C000380F31 /* Movie.swift */; };
 		56553AA71FFBED0E00380F31 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AA61FFBED0E00380F31 /* DataProvider.swift */; };
 		56553AA91FFBEFA100380F31 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AA81FFBEFA100380F31 /* DataProviderTests.swift */; };
+		56553AAC1FFBF44000380F31 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AAB1FFBF44000380F31 /* ListViewModel.swift */; };
+		56553ABA1FFC27C100380F31 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AAF1FFC27C100380F31 /* UIColor+Hex.swift */; };
+		56553ABC1FFC27C100380F31 /* UITableViewCell+reuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AB11FFC27C100380F31 /* UITableViewCell+reuseIdentifier.swift */; };
+		56553ABD1FFC27C100380F31 /* EnumColorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AB21FFC27C100380F31 /* EnumColorable.swift */; };
+		56553ABE1FFC27C100380F31 /* String+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AB31FFC27C100380F31 /* String+Height.swift */; };
+		56553ABF1FFC27C100380F31 /* MainTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AB51FFC27C100380F31 /* MainTheme.swift */; };
+		56553AC01FFC27C100380F31 /* ThemeStyleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AB61FFC27C100380F31 /* ThemeStyleable.swift */; };
+		56553AC11FFC27C100380F31 /* UILabel+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AB71FFC27C100380F31 /* UILabel+Theme.swift */; };
+		56553AC21FFC27C100380F31 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AB81FFC27C100380F31 /* Theme.swift */; };
+		56553AC31FFC27C100380F31 /* Themeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AB91FFC27C100380F31 /* Themeable.swift */; };
+		56553AC71FFC296D00380F31 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AC51FFC296D00380F31 /* MovieTableViewCell.swift */; };
+		56553AC81FFC296D00380F31 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56553AC61FFC296D00380F31 /* MovieTableViewCell.xib */; };
+		56553ACA1FFC2D1000380F31 /* MovieCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AC91FFC2D1000380F31 /* MovieCellViewModel.swift */; };
 		CE6D862BF0975CBE4A2D7130 /* Pods_TMDBSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D7AA7C91A0B8BC86C19D3C /* Pods_TMDBSwiftTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +64,19 @@
 		56553AA41FFBE2C000380F31 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		56553AA61FFBED0E00380F31 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		56553AA81FFBEFA100380F31 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
+		56553AAB1FFBF44000380F31 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		56553AAF1FFC27C100380F31 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		56553AB11FFC27C100380F31 /* UITableViewCell+reuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+reuseIdentifier.swift"; sourceTree = "<group>"; };
+		56553AB21FFC27C100380F31 /* EnumColorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumColorable.swift; sourceTree = "<group>"; };
+		56553AB31FFC27C100380F31 /* String+Height.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Height.swift"; sourceTree = "<group>"; };
+		56553AB51FFC27C100380F31 /* MainTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTheme.swift; sourceTree = "<group>"; };
+		56553AB61FFC27C100380F31 /* ThemeStyleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeStyleable.swift; sourceTree = "<group>"; };
+		56553AB71FFC27C100380F31 /* UILabel+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Theme.swift"; sourceTree = "<group>"; };
+		56553AB81FFC27C100380F31 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		56553AB91FFC27C100380F31 /* Themeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Themeable.swift; sourceTree = "<group>"; };
+		56553AC51FFC296D00380F31 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		56553AC61FFC296D00380F31 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		56553AC91FFC2D1000380F31 /* MovieCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellViewModel.swift; sourceTree = "<group>"; };
 		7A6984737663A0F3FBA08443 /* Pods-TMDBSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMDBSwift/Pods-TMDBSwift.release.xcconfig"; sourceTree = "<group>"; };
 		B799848ECC226FC7D69C7F09 /* Pods-TMDBSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMDBSwift/Pods-TMDBSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		F6D7AA7C91A0B8BC86C19D3C /* Pods_TMDBSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDBSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +136,9 @@
 		56553A7A1FFBC19E00380F31 /* TMDBSwift */ = {
 			isa = PBXGroup;
 			children = (
+				56553AC41FFC294E00380F31 /* View */,
+				56553AAD1FFC27C100380F31 /* Utils */,
+				56553AAA1FFBF33800380F31 /* ViewModel */,
 				56553AA31FFBE2AB00380F31 /* Model */,
 				56553A9E1FFBCB9D00380F31 /* Service */,
 				56553A8D1FFBC75100380F31 /* Config */,
@@ -156,6 +185,56 @@
 				56553AA41FFBE2C000380F31 /* Movie.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		56553AAA1FFBF33800380F31 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				56553AAB1FFBF44000380F31 /* ListViewModel.swift */,
+				56553AC91FFC2D1000380F31 /* MovieCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		56553AAD1FFC27C100380F31 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				56553AAE1FFC27C100380F31 /* Extension */,
+				56553AB41FFC27C100380F31 /* Theme */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		56553AAE1FFC27C100380F31 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				56553AAF1FFC27C100380F31 /* UIColor+Hex.swift */,
+				56553AB11FFC27C100380F31 /* UITableViewCell+reuseIdentifier.swift */,
+				56553AB21FFC27C100380F31 /* EnumColorable.swift */,
+				56553AB31FFC27C100380F31 /* String+Height.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		56553AB41FFC27C100380F31 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				56553AB51FFC27C100380F31 /* MainTheme.swift */,
+				56553AB61FFC27C100380F31 /* ThemeStyleable.swift */,
+				56553AB71FFC27C100380F31 /* UILabel+Theme.swift */,
+				56553AB81FFC27C100380F31 /* Theme.swift */,
+				56553AB91FFC27C100380F31 /* Themeable.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		56553AC41FFC294E00380F31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56553AC51FFC296D00380F31 /* MovieTableViewCell.swift */,
+				56553AC61FFC296D00380F31 /* MovieTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6A9B4608381D453F9EDEA7F2 /* Frameworks */ = {
@@ -257,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56553A861FFBC19E00380F31 /* LaunchScreen.storyboard in Resources */,
+				56553AC81FFC296D00380F31 /* MovieTableViewCell.xib in Resources */,
 				56553A831FFBC19E00380F31 /* Assets.xcassets in Resources */,
 				56553A8F1FFBC75100380F31 /* APIConfiguration.plist in Resources */,
 				56553A811FFBC19E00380F31 /* Main.storyboard in Resources */,
@@ -394,10 +474,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56553ABA1FFC27C100380F31 /* UIColor+Hex.swift in Sources */,
+				56553AC31FFC27C100380F31 /* Themeable.swift in Sources */,
 				56553A7E1FFBC19E00380F31 /* ViewController.swift in Sources */,
 				56553A7C1FFBC19E00380F31 /* AppDelegate.swift in Sources */,
+				56553AC11FFC27C100380F31 /* UILabel+Theme.swift in Sources */,
+				56553ABE1FFC27C100380F31 /* String+Height.swift in Sources */,
+				56553AC71FFC296D00380F31 /* MovieTableViewCell.swift in Sources */,
+				56553AC01FFC27C100380F31 /* ThemeStyleable.swift in Sources */,
+				56553ACA1FFC2D1000380F31 /* MovieCellViewModel.swift in Sources */,
+				56553ABD1FFC27C100380F31 /* EnumColorable.swift in Sources */,
+				56553AAC1FFBF44000380F31 /* ListViewModel.swift in Sources */,
+				56553ABC1FFC27C100380F31 /* UITableViewCell+reuseIdentifier.swift in Sources */,
 				56553AA71FFBED0E00380F31 /* DataProvider.swift in Sources */,
 				56553AA51FFBE2C000380F31 /* Movie.swift in Sources */,
+				56553AC21FFC27C100380F31 /* Theme.swift in Sources */,
+				56553ABF1FFC27C100380F31 /* MainTheme.swift in Sources */,
 				56553AA01FFBCBB200380F31 /* TMDBAPIConnector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
