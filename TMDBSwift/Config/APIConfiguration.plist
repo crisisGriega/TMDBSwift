@@ -10,6 +10,8 @@
 		<string>4</string>
 		<key>key</key>
 		<string>93aea0c77bc168d8bbce3918cefefa45</string>
+		<key>imageUrl</key>
+		<string>http://image.tmdb.org/t/p</string>
 	</dict>
 	<key>Release</key>
 	<dict>
@@ -21,6 +23,8 @@
 		<string>public</string>
 		<key>key</key>
 		<string>93aea0c77bc168d8bbce3918cefefa45</string>
+		<key>imageUrl</key>
+		<string>https://image.tmdb.org/t/p</string>
 	</dict>
 </dict>
 </plist>

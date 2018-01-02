@@ -23,8 +23,20 @@ class APIConnectorTests: XCTestCase {
         super.tearDown()
     }
     
-    func testSimpleConnection() {
+    func testDiscoverMovies() {
         self.commonTestingApiURLFor(.discover, resource: .movie);
+    }
+    
+    func testSimpleImage() {
+        let expectation = self.expectation(description: "expectation-api-image");
+        
+        let url = TMDBAPIConnector.default.urlForImagewithPath("xGWVjewoXnJhvxKW619cMzppJDQ.jpg");
+        Alamofire.request(url).responseData { response in
+            XCTAssert(response.result.isSuccess);
+            expectation.fulfill();
+        }
+        
+        waitForExpectations(timeout: 120.0) { (error) in }
     }
 }
 
@@ -35,7 +47,7 @@ private extension APIConnectorTests {
         
         let url = TMDBAPIConnector.default.urlFor(operation, resource: resource);
         Alamofire.request(url).responseJSON { response in
-            XCTAssert(response.result.isSuccess);
+            XCTAssertTrue(response.result.isSuccess);
             expectation.fulfill();
         }
         

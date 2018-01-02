@@ -20,6 +20,13 @@ enum TMDBEntityType: String {
     case tv;
 }
 
+enum ImageSize: String {
+    case small = "w342";
+    case medium = "w500";
+    case large = "w780";
+    case fullSize = "original";
+}
+
 class TMDBAPIConnector {
     static let `default`: TMDBAPIConnector = TMDBAPIConnector();
     
@@ -44,12 +51,20 @@ class TMDBAPIConnector {
         return baseURL;
     }
     
+    func urlForImagewithPath(_ path: String, size: ImageSize = .medium) -> String {
+        return self.imageURL.appending("/\(size.rawValue)/\(path)");
+    }
+    
 }
 
 // MARK: Private
 private extension TMDBAPIConnector {
     var baseURL: String {
         return self.configurationValue("url");
+    }
+    
+    var imageURL: String {
+        return self.configurationValue("imageUrl");
     }
     
     var version: String {

@@ -14,9 +14,11 @@
 		56553A831FFBC19E00380F31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56553A821FFBC19E00380F31 /* Assets.xcassets */; };
 		56553A861FFBC19E00380F31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56553A841FFBC19E00380F31 /* LaunchScreen.storyboard */; };
 		56553A8F1FFBC75100380F31 /* APIConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56553A8E1FFBC75100380F31 /* APIConfiguration.plist */; };
-		56553A971FFBCA2D00380F31 /* TMDBSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553A961FFBCA2D00380F31 /* TMDBSwiftTests.swift */; };
 		56553AA01FFBCBB200380F31 /* TMDBAPIConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553A9F1FFBCBB200380F31 /* TMDBAPIConnector.swift */; };
 		56553AA21FFBDCFB00380F31 /* APIConnectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AA11FFBDCFB00380F31 /* APIConnectorTests.swift */; };
+		56553AA51FFBE2C000380F31 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AA41FFBE2C000380F31 /* Movie.swift */; };
+		56553AA71FFBED0E00380F31 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AA61FFBED0E00380F31 /* DataProvider.swift */; };
+		56553AA91FFBEFA100380F31 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56553AA81FFBEFA100380F31 /* DataProviderTests.swift */; };
 		CE6D862BF0975CBE4A2D7130 /* Pods_TMDBSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D7AA7C91A0B8BC86C19D3C /* Pods_TMDBSwiftTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,10 +45,12 @@
 		56553A871FFBC19E00380F31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56553A8E1FFBC75100380F31 /* APIConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIConfiguration.plist; sourceTree = "<group>"; };
 		56553A941FFBCA2D00380F31 /* TMDBSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		56553A961FFBCA2D00380F31 /* TMDBSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBSwiftTests.swift; sourceTree = "<group>"; };
 		56553A981FFBCA2D00380F31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56553A9F1FFBCBB200380F31 /* TMDBAPIConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPIConnector.swift; sourceTree = "<group>"; };
 		56553AA11FFBDCFB00380F31 /* APIConnectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnectorTests.swift; sourceTree = "<group>"; };
+		56553AA41FFBE2C000380F31 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		56553AA61FFBED0E00380F31 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		56553AA81FFBEFA100380F31 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
 		7A6984737663A0F3FBA08443 /* Pods-TMDBSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMDBSwift/Pods-TMDBSwift.release.xcconfig"; sourceTree = "<group>"; };
 		B799848ECC226FC7D69C7F09 /* Pods-TMDBSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDBSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMDBSwift/Pods-TMDBSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		F6D7AA7C91A0B8BC86C19D3C /* Pods_TMDBSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDBSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +110,7 @@
 		56553A7A1FFBC19E00380F31 /* TMDBSwift */ = {
 			isa = PBXGroup;
 			children = (
+				56553AA31FFBE2AB00380F31 /* Model */,
 				56553A9E1FFBCB9D00380F31 /* Service */,
 				56553A8D1FFBC75100380F31 /* Config */,
 				56553A7B1FFBC19E00380F31 /* AppDelegate.swift */,
@@ -129,8 +134,8 @@
 		56553A951FFBCA2D00380F31 /* TMDBSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				56553A961FFBCA2D00380F31 /* TMDBSwiftTests.swift */,
 				56553AA11FFBDCFB00380F31 /* APIConnectorTests.swift */,
+				56553AA81FFBEFA100380F31 /* DataProviderTests.swift */,
 				56553A981FFBCA2D00380F31 /* Info.plist */,
 			);
 			path = TMDBSwiftTests;
@@ -140,8 +145,17 @@
 			isa = PBXGroup;
 			children = (
 				56553A9F1FFBCBB200380F31 /* TMDBAPIConnector.swift */,
+				56553AA61FFBED0E00380F31 /* DataProvider.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		56553AA31FFBE2AB00380F31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56553AA41FFBE2C000380F31 /* Movie.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6A9B4608381D453F9EDEA7F2 /* Frameworks */ = {
@@ -382,6 +396,8 @@
 			files = (
 				56553A7E1FFBC19E00380F31 /* ViewController.swift in Sources */,
 				56553A7C1FFBC19E00380F31 /* AppDelegate.swift in Sources */,
+				56553AA71FFBED0E00380F31 /* DataProvider.swift in Sources */,
+				56553AA51FFBE2C000380F31 /* Movie.swift in Sources */,
 				56553AA01FFBCBB200380F31 /* TMDBAPIConnector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,8 +406,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56553AA91FFBEFA100380F31 /* DataProviderTests.swift in Sources */,
 				56553AA21FFBDCFB00380F31 /* APIConnectorTests.swift in Sources */,
-				56553A971FFBCA2D00380F31 /* TMDBSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
