@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Debug</key>
+	<dict>
+		<key>url</key>
+		<string>http://api.themoviedb.org</string>
+		<key>version</key>
+		<string>4</string>
+		<key>key</key>
+		<string>93aea0c77bc168d8bbce3918cefefa45</string>
+	</dict>
+	<key>Release</key>
+	<dict>
+		<key>url</key>
+		<string>https://api.themoviedb.org</string>
+		<key>version</key>
+		<string>4</string>
+		<key>visibility</key>
+		<string>public</string>
+		<key>key</key>
+		<string>93aea0c77bc168d8bbce3918cefefa45</string>
+	</dict>
+</dict>
+</plist>
